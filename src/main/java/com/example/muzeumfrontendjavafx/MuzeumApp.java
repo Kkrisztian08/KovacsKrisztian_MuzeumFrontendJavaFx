@@ -10,8 +10,8 @@ import java.io.IOException;
 public class MuzeumApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MuzeumApp.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        FXMLLoader fxmlLoader = new FXMLLoader(MuzeumApp.class.getResource("muzeum-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 700, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
