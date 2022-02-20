@@ -15,7 +15,7 @@
         <RowConstraints maxHeight="195.60001220703126" minHeight="10.0" prefHeight="50.800024414062534" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <TableView fx:id="paintingTable" prefHeight="367.0" prefWidth="722.0" GridPane.rowIndex="1">
+        <TableView fx:id="paintingTable" onMouseClicked="#onFestmenySelected" prefHeight="367.0" prefWidth="722.0" GridPane.rowIndex="1">
             <columns>
                 <TableColumn fx:id="titleCol" prefWidth="75.0" text="Title" />
                 <TableColumn fx:id="yearCol" prefWidth="75.0" text="Year" />

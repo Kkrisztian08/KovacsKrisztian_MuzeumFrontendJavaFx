@@ -99,7 +99,7 @@ public class StatueController extends Controller {
             hibaKiir(e);
         }
     }
-    @Deprecated
+    @FXML
     public void onSzoborSelected(Event event) {
         int selectedIndex = statueTable.getSelectionModel().getSelectedIndex();
         if (selectedIndex != -1) {

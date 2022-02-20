@@ -15,7 +15,7 @@
     <RowConstraints maxHeight="195.60001220703126" minHeight="10.0" prefHeight="50.800024414062534" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TableView fx:id="statueTable" prefHeight="367.0" prefWidth="722.0" GridPane.rowIndex="1">
+      <TableView fx:id="statueTable" onMouseClicked="#onSzoborSelected" prefHeight="367.0" prefWidth="722.0" GridPane.rowIndex="1">
         <columns>
           <TableColumn fx:id="personCol" prefWidth="75.0" text="Person" />
           <TableColumn fx:id="heightCol" prefWidth="75.0" text="Height" />

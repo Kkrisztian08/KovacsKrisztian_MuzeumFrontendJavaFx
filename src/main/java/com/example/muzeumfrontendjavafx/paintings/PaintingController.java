@@ -97,14 +97,13 @@ public class PaintingController extends Controller {
             hibaKiir(e);
         }
     }
+
     @FXML
-    public void onSzoborSelected(Event event) {
+    public void onFestmenySelected(Event event) {
         int selectedIndex = paintingTable.getSelectionModel().getSelectedIndex();
         if (selectedIndex != -1) {
             festmenytorol.setDisable(false);
             festmenyModosit.setDisable(false);
         }
     }
-
-
 }
