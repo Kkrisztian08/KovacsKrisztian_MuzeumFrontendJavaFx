@@ -75,7 +75,7 @@ public class PaintingController extends Controller {
     @FXML
     public void onPaintingCreate(ActionEvent actionEvent) {
         try {
-            Controller hozzadas = ujAblak("paintings/statuecreate-view.fxml", "Festmény hozzáadása",
+            Controller hozzadas = ujAblak("paintings/paintingcreate-view.fxml", "Festmény hozzáadása",
                     320, 400);
             hozzadas.getStage().setOnCloseRequest(event -> paintingListaFeltolt());
             hozzadas.getStage().show();

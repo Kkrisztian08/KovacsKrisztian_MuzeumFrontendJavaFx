@@ -55,6 +55,7 @@ public abstract class Controller {
                 Platform.runLater(() -> alert.show());
             }
         }, 500);
+        //e.printStackTrace(System.err);
     }
 
     public static Controller ujAblak(String fxml, String title, int width, int height) throws IOException {

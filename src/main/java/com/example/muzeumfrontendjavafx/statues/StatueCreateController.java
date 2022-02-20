@@ -23,6 +23,10 @@ public class StatueCreateController extends Controller {
             alert("Cím megadása kötelező");
             return;
         }
+        if (person.length()<5) {
+            alert("A névnek 5 betünél hosszabbnak kell lennie");
+            return;
+        }
         try {
             height = inputHeight.getValue();
         } catch (NullPointerException ex){
