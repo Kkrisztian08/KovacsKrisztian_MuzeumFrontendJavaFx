@@ -1,12 +1,12 @@
-package com.example.muzeumfrontendjavafx;
+package com.example.muzeumfrontendjavafx.paintings;
 
 public class Paintings {
     private int id;
     private String title;
     private int year;
-    private int on_display;
+    private boolean on_display;
 
-    public Paintings(int id, String title, int year, int on_display) {
+    public Paintings(int id, String title, int year, boolean on_display) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -33,11 +33,11 @@ public class Paintings {
         this.year = year;
     }
 
-    public int getOn_display() {
+    public boolean getOn_display() {
         return on_display;
     }
 
-    public void setOn_display(int on_display) {
+    public void setOn_display(boolean on_display) {
         this.on_display = on_display;
     }
 }

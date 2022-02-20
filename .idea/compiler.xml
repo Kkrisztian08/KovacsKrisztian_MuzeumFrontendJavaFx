@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MuzeumFrontendJavaFx" target="17" />
+      <module name="MuzeumFrontendJavaFx" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

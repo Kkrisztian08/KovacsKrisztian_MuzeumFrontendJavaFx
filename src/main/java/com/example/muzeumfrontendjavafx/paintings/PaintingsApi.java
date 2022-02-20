@@ -10,10 +10,10 @@ import java.util.List;
 
 public class PaintingsApi {
     private static final String BASE_URL="http://127.0.0.1:8000";
-    private static final String Statue_API_URL = BASE_URL + "/api/painting";
+    private static final String Paintings_API_URL = BASE_URL + "/api/paintings";
 
-    public static List<Paintings> getStatues() throws IOException {
-        Response response = RequestHandler.get(Statue_API_URL);
+    public static List<Paintings> getPaintings() throws IOException {
+        Response response =RequestHandler.get(Paintings_API_URL);
         String json = response.getContent();
         Gson jsonConverted = new Gson();
         if (response.getResponseCode() >=400){
@@ -25,10 +25,10 @@ public class PaintingsApi {
         return jsonConverted.fromJson(json,type);
     }
 
-    public static Paintings statueHozzaadasa(Paintings ujStatue) throws IOException {
+    public static Paintings paintingHozzaadasa(Paintings ujStatue) throws IOException {
         Gson jsonConverted = new Gson();
         String filmJson=jsonConverted.toJson(ujStatue);
-        Response response=RequestHandler.post(Statue_API_URL, filmJson);
+        Response response=RequestHandler.post(Paintings_API_URL, filmJson);
         String json = response.getContent();
         if (response.getResponseCode() >=400){
             System.out.println(json);
@@ -38,10 +38,10 @@ public class PaintingsApi {
         return jsonConverted.fromJson(json, Paintings.class);
     }
 
-    public static Paintings statueModositas(Paintings modositando) throws IOException {
+    public static Paintings paintingModositas(Paintings modositando) throws IOException {
         Gson jsonConverted = new Gson();
         String filmJson=jsonConverted.toJson(modositando);
-        Response response=RequestHandler.put(Statue_API_URL +"/"+ modositando.getId(), filmJson);
+        Response response=RequestHandler.put(Paintings_API_URL +"/"+ modositando.getId(), filmJson);
         String json = response.getContent();
         if (response.getResponseCode() >=400){
             System.out.println(json);
@@ -51,8 +51,8 @@ public class PaintingsApi {
         return jsonConverted.fromJson(json, Paintings.class);
     }
 
-    public static boolean statueTorlese(int id) throws IOException {
-        Response response=RequestHandler.delete(Statue_API_URL+"/"+id);
+    public static boolean paintingTorlese(int id) throws IOException {
+        Response response=RequestHandler.delete(Paintings_API_URL+"/"+id);
 
         Gson jsonConverted = new Gson();
         String json = response.getContent();

@@ -1,15 +1,15 @@
-package com.example.muzeumfrontendjavafx;
+package com.example.muzeumfrontendjavafx.statues;
 
 public class Statues {
     private int id;
     private String person;
-    private int hight;
+    private int height;
     private int price;
 
     public Statues(int id, String person, int hight, int price) {
         this.id = id;
         this.person = person;
-        this.hight = hight;
+        this.height = hight;
         this.price = price;
     }
 
@@ -21,8 +21,8 @@ public class Statues {
         return person;
     }
 
-    public int getHight() {
-        return hight;
+    public int getHeight() {
+        return height;
     }
 
     public int getPrice() {
@@ -33,8 +33,8 @@ public class Statues {
         this.person = person;
     }
 
-    public void setHight(int hight) {
-        this.hight = hight;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public void setPrice(int price) {

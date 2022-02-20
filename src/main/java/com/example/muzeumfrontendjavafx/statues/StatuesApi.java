@@ -3,7 +3,6 @@ package com.example.muzeumfrontendjavafx.statues;
 import com.example.muzeumfrontendjavafx.ApiError;
 import com.example.muzeumfrontendjavafx.RequestHandler;
 import com.example.muzeumfrontendjavafx.Response;
-import com.example.muzeumfrontendjavafx.Statues;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -13,7 +12,7 @@ import java.util.List;
 
 public class StatuesApi {
     private static final String BASE_URL="http://127.0.0.1:8000";
-    private static final String Statue_API_URL = BASE_URL + "/api/statue";
+    private static final String Statue_API_URL = BASE_URL + "/api/statues";
 
     public static List<Statues> getStatues() throws IOException {
         Response response = RequestHandler.get(Statue_API_URL);
